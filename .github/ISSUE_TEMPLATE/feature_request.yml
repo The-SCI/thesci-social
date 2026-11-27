@@ -1,0 +1,36 @@
+name: Feature Request
+description: Suggest a capability, integration, or improvement for this TheSCI platform.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping shape **TheSCI** (`thesci.co` · `thesci.co.in`). Please describe the capability you need below.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Workflow Bottleneck
+      description: What problem are you trying to solve?
+      placeholder: Describe the manual task, limitation, or integration gap...
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Capability
+      description: How should the feature work?
+    validations:
+      required: true
+  - type: dropdown
+    id: segment
+    attributes:
+      label: Organization Type
+      options:
+        - Coaching Institute / EdTech
+        - SaaS / Tech Startup
+        - Agency / Hosting Provider
+        - Enterprise / SMB
+        - Individual Developer
+    validations:
+      required: false

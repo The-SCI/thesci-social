@@ -1,0 +1,31 @@
+name: Bug Report
+description: Report an unexpected issue or documentation discrepancy.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For security vulnerabilities, please **do not** open a public issue — email `support@thesci.co.in` directly per our Security Policy.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Issue Summary
+      description: Describe what happened versus what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Go to '...'
+        2. Click '...'
+        3. Observe error...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment (Browser / OS / App Version)
+      placeholder: e.g., Chrome 131 on Windows 11, or Ubuntu 24.04 LTS
